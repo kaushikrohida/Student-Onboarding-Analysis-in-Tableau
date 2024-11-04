@@ -57,7 +57,7 @@ The Tableau workbook includes key dashboards such as:
 
 ## Tableau Public Link
 
-Explore the interactive version of the dashboards on Tableau Public: [Student Onboarding Analysis Dashboard](#)
+Explore the interactive version of the dashboards on Tableau Public: [Student Onboarding Analysis Dashboard](https://public.tableau.com/app/profile/kaushik.rohida6402/viz/StudentOnboardingAnalysisDashboard_17306813461340/Dashboard1)
 
 ## Getting Started
 
@@ -95,4 +95,4 @@ The onboarding analysis provides valuable insights into student engagement and l
 
 ## Contact
 
-For questions or suggestions, please contact **Kaushik Rohida**.
+For questions or suggestions, please contact [Kaushik Rohida](mailto:rohidakaushik@gmail.com).
