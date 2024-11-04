@@ -1,0 +1,1097 @@
+<?xml version='1.0' encoding='utf-8' ?>
+
+<!-- build 20243.24.1010.1014                               -->
+<workbook original-version='18.1' source-build='2024.3.0 (20243.24.1010.1014)' source-platform='mac' version='18.1' xmlns:user='http://www.tableausoftware.com/xml/user'>
+  <document-format-change-manifest>
+    <AnimationOnByDefault />
+    <ISO8601PeriodTypes />
+    <IntuitiveSorting />
+    <IntuitiveSorting_SP2 />
+    <MapboxVectorStylesAndLayers />
+    <MarkAnimation />
+    <ObjectModelEncapsulateLegacy />
+    <ObjectModelExtractV2 />
+    <ObjectModelTableType />
+    <SchemaViewerObjectModel />
+    <SheetIdentifierTracking />
+    <_.fcp.VConnDownstreamExtractsWithWarnings.true...VConnDownstreamExtractsWithWarnings />
+    <WindowsPersistSimpleIdentifiers />
+  </document-format-change-manifest>
+  <preferences>
+    <preference name='ui.encoding.shelf.height' value='24' />
+    <preference name='ui.shelf.height' value='26' />
+  </preferences>
+  <datasources>
+    <datasource caption='data_visualization' inline='true' name='federated.185lyul1sulm5g18zk3jq107fjjr' version='18.1'>
+      <connection class='federated'>
+        <named-connections>
+          <named-connection caption='data_visualization' name='textscan.1r7igq9033rbvx18ii8jk0bun9gw'>
+            <connection class='textscan' directory='/Users/kaushikrohida/Desktop/DA Projects/365 Data Science /Student Onboarding Analysis in Tableau/project-files-student-onboarding-analysis-in-tableau' filename='data_visualization.csv' password='' server='' />
+          </named-connection>
+        </named-connections>
+        <relation connection='textscan.1r7igq9033rbvx18ii8jk0bun9gw' name='data_visualization.csv' table='[data_visualization#csv]' type='table'>
+          <columns character-set='UTF-8' header='yes' locale='en_US' separator=','>
+            <column datatype='integer' name='user_id' ordinal='0' />
+            <column datatype='integer' name='user_paid' ordinal='1' />
+            <column datatype='date' name='user_registered' ordinal='2' />
+            <column datatype='string' name='onboarded' ordinal='3' />
+            <column datatype='string' name='subscription_type' ordinal='4' />
+            <column datatype='date' name='completed_date' ordinal='5' />
+            <column datatype='string' name='onboarding_country' ordinal='6' />
+            <column datatype='string' name='onboarding_heard_from_label' ordinal='7' />
+            <column datatype='string' name='onboarding_goals_label' ordinal='8' />
+            <column datatype='string' name='onboarding_learn_label' ordinal='9' />
+          </columns>
+        </relation>
+        <metadata-records>
+          <metadata-record class='capability'>
+            <remote-name />
+            <remote-type>0</remote-type>
+            <parent-name>[data_visualization.csv]</parent-name>
+            <remote-alias />
+            <aggregation>Count</aggregation>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='string' name='character-set'>&quot;UTF-8&quot;</attribute>
+              <attribute datatype='string' name='collation'>&quot;en_US&quot;</attribute>
+              <attribute datatype='string' name='field-delimiter'>&quot;,&quot;</attribute>
+              <attribute datatype='string' name='header-row'>&quot;true&quot;</attribute>
+              <attribute datatype='string' name='locale'>&quot;en_US&quot;</attribute>
+              <attribute datatype='string' name='single-char'>&quot;&quot;</attribute>
+            </attributes>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>user_id</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[user_id]</local-name>
+            <parent-name>[data_visualization.csv]</parent-name>
+            <remote-alias>user_id</remote-alias>
+            <ordinal>0</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <object-id>[data_visualization.csv_A0EC45A873A44357B7C04947FBE76676]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>user_paid</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[user_paid]</local-name>
+            <parent-name>[data_visualization.csv]</parent-name>
+            <remote-alias>user_paid</remote-alias>
+            <ordinal>1</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <object-id>[data_visualization.csv_A0EC45A873A44357B7C04947FBE76676]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>user_registered</remote-name>
+            <remote-type>133</remote-type>
+            <local-name>[user_registered]</local-name>
+            <parent-name>[data_visualization.csv]</parent-name>
+            <remote-alias>user_registered</remote-alias>
+            <ordinal>2</ordinal>
+            <local-type>date</local-type>
+            <aggregation>Year</aggregation>
+            <contains-null>true</contains-null>
+            <object-id>[data_visualization.csv_A0EC45A873A44357B7C04947FBE76676]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>onboarded</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[onboarded]</local-name>
+            <parent-name>[data_visualization.csv]</parent-name>
+            <remote-alias>onboarded</remote-alias>
+            <ordinal>3</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <scale>1</scale>
+            <width>1073741823</width>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='LEN_RUS' />
+            <object-id>[data_visualization.csv_A0EC45A873A44357B7C04947FBE76676]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>subscription_type</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[subscription_type]</local-name>
+            <parent-name>[data_visualization.csv]</parent-name>
+            <remote-alias>subscription_type</remote-alias>
+            <ordinal>4</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <scale>1</scale>
+            <width>1073741823</width>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='LEN_RUS' />
+            <object-id>[data_visualization.csv_A0EC45A873A44357B7C04947FBE76676]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>completed_date</remote-name>
+            <remote-type>133</remote-type>
+            <local-name>[completed_date]</local-name>
+            <parent-name>[data_visualization.csv]</parent-name>
+            <remote-alias>completed_date</remote-alias>
+            <ordinal>5</ordinal>
+            <local-type>date</local-type>
+            <aggregation>Year</aggregation>
+            <contains-null>true</contains-null>
+            <object-id>[data_visualization.csv_A0EC45A873A44357B7C04947FBE76676]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>onboarding_country</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[onboarding_country]</local-name>
+            <parent-name>[data_visualization.csv]</parent-name>
+            <remote-alias>onboarding_country</remote-alias>
+            <ordinal>6</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <scale>1</scale>
+            <width>1073741823</width>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='LEN_RUS' />
+            <object-id>[data_visualization.csv_A0EC45A873A44357B7C04947FBE76676]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>onboarding_heard_from_label</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[onboarding_heard_from_label]</local-name>
+            <parent-name>[data_visualization.csv]</parent-name>
+            <remote-alias>onboarding_heard_from_label</remote-alias>
+            <ordinal>7</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <scale>1</scale>
+            <width>1073741823</width>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='LEN_RUS' />
+            <object-id>[data_visualization.csv_A0EC45A873A44357B7C04947FBE76676]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>onboarding_goals_label</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[onboarding_goals_label]</local-name>
+            <parent-name>[data_visualization.csv]</parent-name>
+            <remote-alias>onboarding_goals_label</remote-alias>
+            <ordinal>8</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <scale>1</scale>
+            <width>1073741823</width>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='LEN_RUS' />
+            <object-id>[data_visualization.csv_A0EC45A873A44357B7C04947FBE76676]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>onboarding_learn_label</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[onboarding_learn_label]</local-name>
+            <parent-name>[data_visualization.csv]</parent-name>
+            <remote-alias>onboarding_learn_label</remote-alias>
+            <ordinal>9</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <scale>1</scale>
+            <width>1073741823</width>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='LEN_RUS' />
+            <object-id>[data_visualization.csv_A0EC45A873A44357B7C04947FBE76676]</object-id>
+          </metadata-record>
+        </metadata-records>
+      </connection>
+      <aliases enabled='yes' />
+      <column caption='Count (User ID)' datatype='integer' name='[Calculation_5093148976815521792]' role='measure' type='quantitative'>
+        <calculation class='tableau' formula='COUNT([user_id])' />
+      </column>
+      <column caption='Percentage Onboarded' datatype='real' name='[Calculation_5093148976819109889]' role='measure' type='quantitative'>
+        <calculation class='tableau' formula='SUM(IF [onboarded] = &apos;Yes&apos; THEN 1 ELSE 0 END) / COUNT([user_id]) * 100' />
+      </column>
+      <column caption='data_visualization.csv' datatype='table' name='[__tableau_internal_object_id__].[data_visualization.csv_A0EC45A873A44357B7C04947FBE76676]' role='measure' type='quantitative' />
+      <column caption='Completed Date' datatype='date' name='[completed_date]' role='dimension' type='ordinal' />
+      <column caption='Onboarded' datatype='string' name='[onboarded]' role='dimension' type='nominal' />
+      <column caption='Onboarding Country' datatype='string' name='[onboarding_country]' role='dimension' semantic-role='[Country].[ISO3166_2]' type='nominal' />
+      <column caption='Onboarding Goals Label' datatype='string' name='[onboarding_goals_label]' role='dimension' type='nominal' />
+      <column caption='Onboarding Heard From Label' datatype='string' name='[onboarding_heard_from_label]' role='dimension' type='nominal' />
+      <column caption='Onboarding Learn Label' datatype='string' name='[onboarding_learn_label]' role='dimension' type='nominal' />
+      <column caption='Subscription Type' datatype='string' name='[subscription_type]' role='dimension' type='nominal' />
+      <column caption='User Id' datatype='integer' name='[user_id]' role='dimension' type='ordinal' />
+      <column caption='User Paid' datatype='integer' name='[user_paid]' role='measure' type='quantitative' />
+      <column caption='User Registered' datatype='date' name='[user_registered]' role='dimension' type='ordinal' />
+      <column-instance column='[user_id]' derivation='Count' name='[cnt:user_id:qk]' pivot='key' type='quantitative' />
+      <column-instance column='[Calculation_5093148976819109889]' derivation='User' name='[usr:Calculation_5093148976819109889:qk]' pivot='key' type='quantitative' />
+      <extract _.fcp.VConnDownstreamExtractsWithWarnings.true...user-specific='false' count='-1' enabled='true' object-id='' units='records'>
+        <connection access_mode='readonly' author-locale='en_US' class='hyper' dbname='/var/folders/vg/zk94txd56395_xhy9khy9bn80000gn/T/tableau-temp/#TableauTemp_1kd1n371mxve6v1ajfs7w0nxk3mv.hyper' default-settings='hyper' schema='Extract' sslmode='' tablename='Extract' update-time='11/03/2024 09:53:39 PM' username='tableau_internal_user'>
+          <relation name='Extract' table='[Extract].[Extract]' type='table' />
+          <metadata-records>
+            <metadata-record class='column'>
+              <remote-name>user_id</remote-name>
+              <remote-type>20</remote-type>
+              <local-name>[user_id]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>user_id</remote-alias>
+              <ordinal>0</ordinal>
+              <family>data_visualization.csv</family>
+              <local-type>integer</local-type>
+              <aggregation>Sum</aggregation>
+              <approx-count>1713</approx-count>
+              <contains-null>true</contains-null>
+              <object-id>[data_visualization.csv_A0EC45A873A44357B7C04947FBE76676]</object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>user_paid</remote-name>
+              <remote-type>20</remote-type>
+              <local-name>[user_paid]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>user_paid</remote-alias>
+              <ordinal>1</ordinal>
+              <family>data_visualization.csv</family>
+              <local-type>integer</local-type>
+              <aggregation>Sum</aggregation>
+              <approx-count>2</approx-count>
+              <contains-null>true</contains-null>
+              <object-id>[data_visualization.csv_A0EC45A873A44357B7C04947FBE76676]</object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>user_registered</remote-name>
+              <remote-type>133</remote-type>
+              <local-name>[user_registered]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>user_registered</remote-alias>
+              <ordinal>2</ordinal>
+              <family>data_visualization.csv</family>
+              <local-type>date</local-type>
+              <aggregation>Year</aggregation>
+              <approx-count>178</approx-count>
+              <contains-null>true</contains-null>
+              <object-id>[data_visualization.csv_A0EC45A873A44357B7C04947FBE76676]</object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>onboarded</remote-name>
+              <remote-type>129</remote-type>
+              <local-name>[onboarded]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>onboarded</remote-alias>
+              <ordinal>3</ordinal>
+              <family>data_visualization.csv</family>
+              <local-type>string</local-type>
+              <aggregation>Count</aggregation>
+              <approx-count>2</approx-count>
+              <contains-null>true</contains-null>
+              <collation flag='0' name='LEN_RUS' />
+              <object-id>[data_visualization.csv_A0EC45A873A44357B7C04947FBE76676]</object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>subscription_type</remote-name>
+              <remote-type>129</remote-type>
+              <local-name>[subscription_type]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>subscription_type</remote-alias>
+              <ordinal>4</ordinal>
+              <family>data_visualization.csv</family>
+              <local-type>string</local-type>
+              <aggregation>Count</aggregation>
+              <approx-count>5</approx-count>
+              <contains-null>true</contains-null>
+              <collation flag='0' name='LEN_RUS' />
+              <object-id>[data_visualization.csv_A0EC45A873A44357B7C04947FBE76676]</object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>completed_date</remote-name>
+              <remote-type>133</remote-type>
+              <local-name>[completed_date]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>completed_date</remote-alias>
+              <ordinal>5</ordinal>
+              <family>data_visualization.csv</family>
+              <local-type>date</local-type>
+              <aggregation>Year</aggregation>
+              <approx-count>179</approx-count>
+              <contains-null>true</contains-null>
+              <object-id>[data_visualization.csv_A0EC45A873A44357B7C04947FBE76676]</object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>onboarding_country</remote-name>
+              <remote-type>129</remote-type>
+              <local-name>[onboarding_country]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>onboarding_country</remote-alias>
+              <ordinal>6</ordinal>
+              <family>data_visualization.csv</family>
+              <local-type>string</local-type>
+              <aggregation>Count</aggregation>
+              <approx-count>97</approx-count>
+              <contains-null>true</contains-null>
+              <collation flag='0' name='LEN_RUS' />
+              <object-id>[data_visualization.csv_A0EC45A873A44357B7C04947FBE76676]</object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>onboarding_heard_from_label</remote-name>
+              <remote-type>129</remote-type>
+              <local-name>[onboarding_heard_from_label]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>onboarding_heard_from_label</remote-alias>
+              <ordinal>7</ordinal>
+              <family>data_visualization.csv</family>
+              <local-type>string</local-type>
+              <aggregation>Count</aggregation>
+              <approx-count>9</approx-count>
+              <contains-null>true</contains-null>
+              <collation flag='0' name='LEN_RUS' />
+              <object-id>[data_visualization.csv_A0EC45A873A44357B7C04947FBE76676]</object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>onboarding_goals_label</remote-name>
+              <remote-type>129</remote-type>
+              <local-name>[onboarding_goals_label]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>onboarding_goals_label</remote-alias>
+              <ordinal>8</ordinal>
+              <family>data_visualization.csv</family>
+              <local-type>string</local-type>
+              <aggregation>Count</aggregation>
+              <approx-count>7</approx-count>
+              <contains-null>true</contains-null>
+              <collation flag='0' name='LEN_RUS' />
+              <object-id>[data_visualization.csv_A0EC45A873A44357B7C04947FBE76676]</object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>onboarding_learn_label</remote-name>
+              <remote-type>129</remote-type>
+              <local-name>[onboarding_learn_label]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>onboarding_learn_label</remote-alias>
+              <ordinal>9</ordinal>
+              <family>data_visualization.csv</family>
+              <local-type>string</local-type>
+              <aggregation>Count</aggregation>
+              <approx-count>7</approx-count>
+              <contains-null>true</contains-null>
+              <collation flag='0' name='LEN_RUS' />
+              <object-id>[data_visualization.csv_A0EC45A873A44357B7C04947FBE76676]</object-id>
+            </metadata-record>
+          </metadata-records>
+        </connection>
+      </extract>
+      <layout dim-ordering='alphabetic' measure-ordering='alphabetic' show-structure='true' />
+      <style>
+        <style-rule element='mark'>
+          <encoding attr='color' field='[:Measure Names]' type='palette'>
+            <map to='#4e79a7'>
+              <bucket>&quot;[federated.185lyul1sulm5g18zk3jq107fjjr].[cnt:user_id:qk]&quot;</bucket>
+            </map>
+            <map to='#f28e2b'>
+              <bucket>&quot;[federated.185lyul1sulm5g18zk3jq107fjjr].[usr:Calculation_5093148976819109889:qk]&quot;</bucket>
+            </map>
+          </encoding>
+        </style-rule>
+      </style>
+      <semantic-values>
+        <semantic-value key='[Country].[Name]' value='&quot;United States&quot;' />
+      </semantic-values>
+      <object-graph>
+        <objects>
+          <object caption='data_visualization.csv' id='data_visualization.csv_A0EC45A873A44357B7C04947FBE76676'>
+            <properties context=''>
+              <relation connection='textscan.1r7igq9033rbvx18ii8jk0bun9gw' name='data_visualization.csv' table='[data_visualization#csv]' type='table'>
+                <columns character-set='UTF-8' header='yes' locale='en_US' separator=','>
+                  <column datatype='integer' name='user_id' ordinal='0' />
+                  <column datatype='integer' name='user_paid' ordinal='1' />
+                  <column datatype='date' name='user_registered' ordinal='2' />
+                  <column datatype='string' name='onboarded' ordinal='3' />
+                  <column datatype='string' name='subscription_type' ordinal='4' />
+                  <column datatype='date' name='completed_date' ordinal='5' />
+                  <column datatype='string' name='onboarding_country' ordinal='6' />
+                  <column datatype='string' name='onboarding_heard_from_label' ordinal='7' />
+                  <column datatype='string' name='onboarding_goals_label' ordinal='8' />
+                  <column datatype='string' name='onboarding_learn_label' ordinal='9' />
+                </columns>
+              </relation>
+            </properties>
+            <properties context='extract'>
+              <relation name='Extract' table='[Extract].[Extract]' type='table' />
+            </properties>
+          </object>
+        </objects>
+      </object-graph>
+    </datasource>
+  </datasources>
+  <mapsources>
+    <mapsource name='Tableau' />
+  </mapsources>
+  <shared-views>
+    <shared-view name='federated.185lyul1sulm5g18zk3jq107fjjr'>
+      <datasources>
+        <datasource caption='data_visualization' name='federated.185lyul1sulm5g18zk3jq107fjjr' />
+      </datasources>
+      <datasource-dependencies datasource='federated.185lyul1sulm5g18zk3jq107fjjr'>
+        <column-instance column='[onboarding_country]' derivation='None' name='[none:onboarding_country:nk]' pivot='key' type='nominal' />
+        <column-instance column='[onboarding_goals_label]' derivation='None' name='[none:onboarding_goals_label:nk]' pivot='key' type='nominal' />
+        <column-instance column='[onboarding_heard_from_label]' derivation='None' name='[none:onboarding_heard_from_label:nk]' pivot='key' type='nominal' />
+        <column-instance column='[onboarding_learn_label]' derivation='None' name='[none:onboarding_learn_label:nk]' pivot='key' type='nominal' />
+        <column-instance column='[subscription_type]' derivation='None' name='[none:subscription_type:nk]' pivot='key' type='nominal' />
+        <column caption='Onboarding Country' datatype='string' name='[onboarding_country]' role='dimension' semantic-role='[Country].[ISO3166_2]' type='nominal' />
+        <column caption='Onboarding Goals Label' datatype='string' name='[onboarding_goals_label]' role='dimension' type='nominal' />
+        <column caption='Onboarding Heard From Label' datatype='string' name='[onboarding_heard_from_label]' role='dimension' type='nominal' />
+        <column caption='Onboarding Learn Label' datatype='string' name='[onboarding_learn_label]' role='dimension' type='nominal' />
+        <column caption='Subscription Type' datatype='string' name='[subscription_type]' role='dimension' type='nominal' />
+      </datasource-dependencies>
+      <filter class='categorical' column='[federated.185lyul1sulm5g18zk3jq107fjjr].[none:onboarding_country:nk]'>
+        <groupfilter function='member' level='[none:onboarding_country:nk]' member='&quot;United States of America&quot;' user:ui-domain='database' user:ui-enumeration='inclusive' user:ui-marker='enumerate' />
+      </filter>
+      <filter class='categorical' column='[federated.185lyul1sulm5g18zk3jq107fjjr].[none:onboarding_goals_label:nk]'>
+        <groupfilter function='level-members' level='[none:onboarding_goals_label:nk]' user:ui-enumeration='all' user:ui-marker='enumerate' />
+      </filter>
+      <filter class='categorical' column='[federated.185lyul1sulm5g18zk3jq107fjjr].[none:onboarding_heard_from_label:nk]'>
+        <groupfilter function='level-members' level='[none:onboarding_heard_from_label:nk]' user:ui-enumeration='all' user:ui-marker='enumerate' />
+      </filter>
+      <filter class='categorical' column='[federated.185lyul1sulm5g18zk3jq107fjjr].[none:onboarding_learn_label:nk]'>
+        <groupfilter function='level-members' level='[none:onboarding_learn_label:nk]' user:ui-enumeration='all' user:ui-marker='enumerate' />
+      </filter>
+      <filter class='categorical' column='[federated.185lyul1sulm5g18zk3jq107fjjr].[none:subscription_type:nk]'>
+        <groupfilter function='level-members' level='[none:subscription_type:nk]' user:ui-enumeration='all' user:ui-marker='enumerate' />
+      </filter>
+    </shared-view>
+  </shared-views>
+  <worksheets>
+    <worksheet name='Conversion Rate by Country'>
+      <layout-options>
+        <title>
+          <formatted-text>
+            <run>Conversion Rates by Country</run>
+          </formatted-text>
+        </title>
+      </layout-options>
+      <table>
+        <view>
+          <datasources>
+            <datasource caption='data_visualization' name='federated.185lyul1sulm5g18zk3jq107fjjr' />
+          </datasources>
+          <mapsources>
+            <mapsource name='Tableau' />
+          </mapsources>
+          <datasource-dependencies datasource='federated.185lyul1sulm5g18zk3jq107fjjr'>
+            <column caption='Count (User ID)' datatype='integer' name='[Calculation_5093148976815521792]' role='measure' type='quantitative'>
+              <calculation class='tableau' formula='COUNT([user_id])' />
+            </column>
+            <column-instance column='[onboarding_country]' derivation='None' name='[none:onboarding_country:nk]' pivot='key' type='nominal' />
+            <column-instance column='[onboarding_goals_label]' derivation='None' name='[none:onboarding_goals_label:nk]' pivot='key' type='nominal' />
+            <column-instance column='[onboarding_heard_from_label]' derivation='None' name='[none:onboarding_heard_from_label:nk]' pivot='key' type='nominal' />
+            <column-instance column='[onboarding_learn_label]' derivation='None' name='[none:onboarding_learn_label:nk]' pivot='key' type='nominal' />
+            <column-instance column='[subscription_type]' derivation='None' name='[none:subscription_type:nk]' pivot='key' type='nominal' />
+            <column caption='Onboarding Country' datatype='string' name='[onboarding_country]' role='dimension' semantic-role='[Country].[ISO3166_2]' type='nominal' />
+            <column caption='Onboarding Goals Label' datatype='string' name='[onboarding_goals_label]' role='dimension' type='nominal' />
+            <column caption='Onboarding Heard From Label' datatype='string' name='[onboarding_heard_from_label]' role='dimension' type='nominal' />
+            <column caption='Onboarding Learn Label' datatype='string' name='[onboarding_learn_label]' role='dimension' type='nominal' />
+            <column caption='Subscription Type' datatype='string' name='[subscription_type]' role='dimension' type='nominal' />
+            <column caption='User Id' datatype='integer' name='[user_id]' role='dimension' type='ordinal' />
+            <column-instance column='[Calculation_5093148976815521792]' derivation='User' name='[usr:Calculation_5093148976815521792:qk]' pivot='key' type='quantitative' />
+          </datasource-dependencies>
+          <slices>
+            <column>[federated.185lyul1sulm5g18zk3jq107fjjr].[none:onboarding_goals_label:nk]</column>
+            <column>[federated.185lyul1sulm5g18zk3jq107fjjr].[none:onboarding_heard_from_label:nk]</column>
+            <column>[federated.185lyul1sulm5g18zk3jq107fjjr].[none:onboarding_learn_label:nk]</column>
+            <column>[federated.185lyul1sulm5g18zk3jq107fjjr].[none:subscription_type:nk]</column>
+            <column>[federated.185lyul1sulm5g18zk3jq107fjjr].[none:onboarding_country:nk]</column>
+          </slices>
+          <aggregation value='true' />
+        </view>
+        <style>
+          <style-rule element='map'>
+            <format attr='washout' value='0.0' />
+          </style-rule>
+        </style>
+        <panes>
+          <pane selection-relaxation-option='selection-relaxation-allow'>
+            <view>
+              <breakdown value='auto' />
+            </view>
+            <mark class='Automatic' />
+            <encodings>
+              <color column='[federated.185lyul1sulm5g18zk3jq107fjjr].[usr:Calculation_5093148976815521792:qk]' />
+              <lod column='[federated.185lyul1sulm5g18zk3jq107fjjr].[none:onboarding_country:nk]' />
+              <geometry column='[federated.185lyul1sulm5g18zk3jq107fjjr].[Geometry (generated)]' />
+            </encodings>
+          </pane>
+        </panes>
+        <rows>[federated.185lyul1sulm5g18zk3jq107fjjr].[Latitude (generated)]</rows>
+        <cols>[federated.185lyul1sulm5g18zk3jq107fjjr].[Longitude (generated)]</cols>
+      </table>
+      <simple-id uuid='{A618A552-399F-4786-BAC9-E878C7E5E85C}' />
+    </worksheet>
+    <worksheet name='Heard from Us'>
+      <layout-options>
+        <title>
+          <formatted-text>
+            <run>Where did you hear from us?</run>
+          </formatted-text>
+        </title>
+      </layout-options>
+      <table>
+        <view>
+          <datasources>
+            <datasource caption='data_visualization' name='federated.185lyul1sulm5g18zk3jq107fjjr' />
+          </datasources>
+          <datasource-dependencies datasource='federated.185lyul1sulm5g18zk3jq107fjjr'>
+            <column caption='Count (User ID)' datatype='integer' name='[Calculation_5093148976815521792]' role='measure' type='quantitative'>
+              <calculation class='tableau' formula='COUNT([user_id])' />
+            </column>
+            <column-instance column='[user_id]' derivation='Count' name='[cnt:user_id:qk]' pivot='key' type='quantitative' />
+            <column caption='Completed Date' datatype='date' name='[completed_date]' role='dimension' type='ordinal' />
+            <column-instance column='[completed_date]' derivation='None' name='[none:completed_date:qk]' pivot='key' type='quantitative' />
+            <column-instance column='[onboarding_country]' derivation='None' name='[none:onboarding_country:nk]' pivot='key' type='nominal' />
+            <column-instance column='[onboarding_goals_label]' derivation='None' name='[none:onboarding_goals_label:nk]' pivot='key' type='nominal' />
+            <column-instance column='[onboarding_heard_from_label]' derivation='None' name='[none:onboarding_heard_from_label:nk]' pivot='key' type='nominal' />
+            <column-instance column='[onboarding_learn_label]' derivation='None' name='[none:onboarding_learn_label:nk]' pivot='key' type='nominal' />
+            <column-instance column='[subscription_type]' derivation='None' name='[none:subscription_type:nk]' pivot='key' type='nominal' />
+            <column caption='Onboarding Country' datatype='string' name='[onboarding_country]' role='dimension' semantic-role='[Country].[ISO3166_2]' type='nominal' />
+            <column caption='Onboarding Goals Label' datatype='string' name='[onboarding_goals_label]' role='dimension' type='nominal' />
+            <column caption='Onboarding Heard From Label' datatype='string' name='[onboarding_heard_from_label]' role='dimension' type='nominal' />
+            <column caption='Onboarding Learn Label' datatype='string' name='[onboarding_learn_label]' role='dimension' type='nominal' />
+            <column caption='Subscription Type' datatype='string' name='[subscription_type]' role='dimension' type='nominal' />
+            <column caption='User Id' datatype='integer' name='[user_id]' role='dimension' type='ordinal' />
+            <column-instance column='[Calculation_5093148976815521792]' derivation='User' name='[usr:Calculation_5093148976815521792:qk]' pivot='key' type='quantitative' />
+          </datasource-dependencies>
+          <filter class='relative-date' column='[federated.185lyul1sulm5g18zk3jq107fjjr].[none:completed_date:qk]' first-period='0' include-future='true' include-null='false' last-period='0' period-type-v2='day' />
+          <shelf-sorts>
+            <shelf-sort-v2 dimension-to-sort='[federated.185lyul1sulm5g18zk3jq107fjjr].[none:onboarding_heard_from_label:nk]' direction='DESC' is-on-innermost-dimension='true' measure-to-sort-by='[federated.185lyul1sulm5g18zk3jq107fjjr].[usr:Calculation_5093148976815521792:qk]' shelf='rows' />
+          </shelf-sorts>
+          <slices>
+            <column>[federated.185lyul1sulm5g18zk3jq107fjjr].[none:onboarding_country:nk]</column>
+            <column>[federated.185lyul1sulm5g18zk3jq107fjjr].[none:onboarding_goals_label:nk]</column>
+            <column>[federated.185lyul1sulm5g18zk3jq107fjjr].[none:onboarding_heard_from_label:nk]</column>
+            <column>[federated.185lyul1sulm5g18zk3jq107fjjr].[none:onboarding_learn_label:nk]</column>
+            <column>[federated.185lyul1sulm5g18zk3jq107fjjr].[none:subscription_type:nk]</column>
+            <column>[federated.185lyul1sulm5g18zk3jq107fjjr].[none:completed_date:qk]</column>
+          </slices>
+          <aggregation value='true' />
+        </view>
+        <style />
+        <panes>
+          <pane selection-relaxation-option='selection-relaxation-allow'>
+            <view>
+              <breakdown value='auto' />
+            </view>
+            <mark class='Automatic' />
+            <encodings>
+              <text column='[federated.185lyul1sulm5g18zk3jq107fjjr].[usr:Calculation_5093148976815521792:qk]' />
+            </encodings>
+            <style>
+              <style-rule element='mark'>
+                <format attr='mark-color' value='#3eb0b8' />
+                <format attr='mark-labels-show' value='true' />
+                <format attr='mark-labels-cull' value='true' />
+              </style-rule>
+            </style>
+          </pane>
+        </panes>
+        <rows>[federated.185lyul1sulm5g18zk3jq107fjjr].[none:onboarding_heard_from_label:nk]</rows>
+        <cols>[federated.185lyul1sulm5g18zk3jq107fjjr].[cnt:user_id:qk]</cols>
+      </table>
+      <simple-id uuid='{05849F22-33FF-486C-8CEF-AF802D11686D}' />
+    </worksheet>
+    <worksheet name='Number of Students'>
+      <layout-options>
+        <title>
+          <formatted-text>
+            <run>Number of Students</run>
+          </formatted-text>
+        </title>
+      </layout-options>
+      <table>
+        <view>
+          <datasources>
+            <datasource caption='data_visualization' name='federated.185lyul1sulm5g18zk3jq107fjjr' />
+          </datasources>
+          <datasource-dependencies datasource='federated.185lyul1sulm5g18zk3jq107fjjr'>
+            <column caption='Count (User ID)' datatype='integer' name='[Calculation_5093148976815521792]' role='measure' type='quantitative'>
+              <calculation class='tableau' formula='COUNT([user_id])' />
+            </column>
+            <column-instance column='[onboarding_country]' derivation='None' name='[none:onboarding_country:nk]' pivot='key' type='nominal' />
+            <column-instance column='[onboarding_goals_label]' derivation='None' name='[none:onboarding_goals_label:nk]' pivot='key' type='nominal' />
+            <column-instance column='[onboarding_heard_from_label]' derivation='None' name='[none:onboarding_heard_from_label:nk]' pivot='key' type='nominal' />
+            <column-instance column='[onboarding_learn_label]' derivation='None' name='[none:onboarding_learn_label:nk]' pivot='key' type='nominal' />
+            <column-instance column='[subscription_type]' derivation='None' name='[none:subscription_type:nk]' pivot='key' type='nominal' />
+            <column caption='Onboarding Country' datatype='string' name='[onboarding_country]' role='dimension' semantic-role='[Country].[ISO3166_2]' type='nominal' />
+            <column caption='Onboarding Goals Label' datatype='string' name='[onboarding_goals_label]' role='dimension' type='nominal' />
+            <column caption='Onboarding Heard From Label' datatype='string' name='[onboarding_heard_from_label]' role='dimension' type='nominal' />
+            <column caption='Onboarding Learn Label' datatype='string' name='[onboarding_learn_label]' role='dimension' type='nominal' />
+            <column caption='Subscription Type' datatype='string' name='[subscription_type]' role='dimension' type='nominal' />
+            <column caption='User Id' datatype='integer' name='[user_id]' role='dimension' type='ordinal' />
+            <column-instance column='[Calculation_5093148976815521792]' derivation='User' name='[usr:Calculation_5093148976815521792:qk]' pivot='key' type='quantitative' />
+          </datasource-dependencies>
+          <slices>
+            <column>[federated.185lyul1sulm5g18zk3jq107fjjr].[none:onboarding_goals_label:nk]</column>
+            <column>[federated.185lyul1sulm5g18zk3jq107fjjr].[none:onboarding_heard_from_label:nk]</column>
+            <column>[federated.185lyul1sulm5g18zk3jq107fjjr].[none:onboarding_learn_label:nk]</column>
+            <column>[federated.185lyul1sulm5g18zk3jq107fjjr].[none:subscription_type:nk]</column>
+            <column>[federated.185lyul1sulm5g18zk3jq107fjjr].[none:onboarding_country:nk]</column>
+          </slices>
+          <aggregation value='true' />
+        </view>
+        <style>
+          <style-rule element='cell'>
+            <format attr='font-size' value='16' />
+          </style-rule>
+        </style>
+        <panes>
+          <pane selection-relaxation-option='selection-relaxation-allow'>
+            <view>
+              <breakdown value='auto' />
+            </view>
+            <mark class='Automatic' />
+            <encodings>
+              <text column='[federated.185lyul1sulm5g18zk3jq107fjjr].[usr:Calculation_5093148976815521792:qk]' />
+            </encodings>
+            <style>
+              <style-rule element='mark'>
+                <format attr='mark-labels-cull' value='true' />
+                <format attr='mark-labels-show' value='true' />
+              </style-rule>
+            </style>
+          </pane>
+        </panes>
+        <rows />
+        <cols />
+      </table>
+      <simple-id uuid='{D597ABFB-2121-4BE3-8475-2FFEEC306C75}' />
+    </worksheet>
+    <worksheet name='Sheet 2'>
+      <table>
+        <view>
+          <datasources>
+            <datasource caption='data_visualization' name='federated.185lyul1sulm5g18zk3jq107fjjr' />
+          </datasources>
+          <datasource-dependencies datasource='federated.185lyul1sulm5g18zk3jq107fjjr'>
+            <column caption='Percentage Onboarded' datatype='real' name='[Calculation_5093148976819109889]' role='measure' type='quantitative'>
+              <calculation class='tableau' formula='SUM(IF [onboarded] = &apos;Yes&apos; THEN 1 ELSE 0 END) / COUNT([user_id]) * 100' />
+            </column>
+            <column-instance column='[user_id]' derivation='Count' name='[cnt:user_id:qk]' pivot='key' type='quantitative' />
+            <column caption='Completed Date' datatype='date' name='[completed_date]' role='dimension' type='ordinal' />
+            <column-instance column='[completed_date]' derivation='Month' name='[mn:completed_date:ok]' pivot='key' type='ordinal' />
+            <column-instance column='[user_registered]' derivation='Month' name='[mn:user_registered:ok]' pivot='key' type='ordinal' />
+            <column-instance column='[onboarding_country]' derivation='None' name='[none:onboarding_country:nk]' pivot='key' type='nominal' />
+            <column-instance column='[onboarding_goals_label]' derivation='None' name='[none:onboarding_goals_label:nk]' pivot='key' type='nominal' />
+            <column-instance column='[onboarding_heard_from_label]' derivation='None' name='[none:onboarding_heard_from_label:nk]' pivot='key' type='nominal' />
+            <column-instance column='[onboarding_learn_label]' derivation='None' name='[none:onboarding_learn_label:nk]' pivot='key' type='nominal' />
+            <column-instance column='[subscription_type]' derivation='None' name='[none:subscription_type:nk]' pivot='key' type='nominal' />
+            <column caption='Onboarded' datatype='string' name='[onboarded]' role='dimension' type='nominal' />
+            <column caption='Onboarding Country' datatype='string' name='[onboarding_country]' role='dimension' semantic-role='[Country].[ISO3166_2]' type='nominal' />
+            <column caption='Onboarding Goals Label' datatype='string' name='[onboarding_goals_label]' role='dimension' type='nominal' />
+            <column caption='Onboarding Heard From Label' datatype='string' name='[onboarding_heard_from_label]' role='dimension' type='nominal' />
+            <column caption='Onboarding Learn Label' datatype='string' name='[onboarding_learn_label]' role='dimension' type='nominal' />
+            <column caption='Subscription Type' datatype='string' name='[subscription_type]' role='dimension' type='nominal' />
+            <column caption='User Id' datatype='integer' name='[user_id]' role='dimension' type='ordinal' />
+            <column caption='User Registered' datatype='date' name='[user_registered]' role='dimension' type='ordinal' />
+            <column-instance column='[Calculation_5093148976819109889]' derivation='User' name='[usr:Calculation_5093148976819109889:qk]' pivot='key' type='quantitative' />
+          </datasource-dependencies>
+          <filter class='categorical' column='[federated.185lyul1sulm5g18zk3jq107fjjr].[mn:completed_date:ok]'>
+            <groupfilter function='except' user:ui-domain='database' user:ui-enumeration='exclusive' user:ui-marker='enumerate'>
+              <groupfilter function='level-members' level='[mn:completed_date:ok]' />
+              <groupfilter function='member' level='[mn:completed_date:ok]' member='%null%' />
+            </groupfilter>
+          </filter>
+          <slices>
+            <column>[federated.185lyul1sulm5g18zk3jq107fjjr].[mn:completed_date:ok]</column>
+            <column>[federated.185lyul1sulm5g18zk3jq107fjjr].[none:onboarding_goals_label:nk]</column>
+            <column>[federated.185lyul1sulm5g18zk3jq107fjjr].[none:onboarding_heard_from_label:nk]</column>
+            <column>[federated.185lyul1sulm5g18zk3jq107fjjr].[none:onboarding_learn_label:nk]</column>
+            <column>[federated.185lyul1sulm5g18zk3jq107fjjr].[none:subscription_type:nk]</column>
+            <column>[federated.185lyul1sulm5g18zk3jq107fjjr].[none:onboarding_country:nk]</column>
+          </slices>
+          <aggregation value='true' />
+        </view>
+        <style />
+        <panes>
+          <pane id='2' selection-relaxation-option='selection-relaxation-allow'>
+            <view>
+              <breakdown value='auto' />
+            </view>
+            <mark class='Bar' />
+            <encodings>
+              <color column='[federated.185lyul1sulm5g18zk3jq107fjjr].[:Measure Names]' />
+            </encodings>
+            <style>
+              <style-rule element='mark'>
+                <format attr='mark-color' value='#3eb0b8' />
+              </style-rule>
+            </style>
+          </pane>
+          <pane id='3' selection-relaxation-option='selection-relaxation-allow' y-axis-name='[federated.185lyul1sulm5g18zk3jq107fjjr].[cnt:user_id:qk]'>
+            <view>
+              <breakdown value='auto' />
+            </view>
+            <mark class='Bar' />
+            <encodings>
+              <color column='[federated.185lyul1sulm5g18zk3jq107fjjr].[:Measure Names]' />
+            </encodings>
+            <style>
+              <style-rule element='mark'>
+                <format attr='mark-color' value='#3eb0b8' />
+              </style-rule>
+            </style>
+          </pane>
+          <pane id='4' selection-relaxation-option='selection-relaxation-allow' y-axis-name='[federated.185lyul1sulm5g18zk3jq107fjjr].[usr:Calculation_5093148976819109889:qk]'>
+            <view>
+              <breakdown value='auto' />
+            </view>
+            <mark class='Line' />
+            <encodings>
+              <color column='[federated.185lyul1sulm5g18zk3jq107fjjr].[:Measure Names]' />
+            </encodings>
+            <style>
+              <style-rule element='mark'>
+                <format attr='mark-color' value='#3eb0b8' />
+              </style-rule>
+            </style>
+          </pane>
+        </panes>
+        <rows>([federated.185lyul1sulm5g18zk3jq107fjjr].[cnt:user_id:qk] + [federated.185lyul1sulm5g18zk3jq107fjjr].[usr:Calculation_5093148976819109889:qk])</rows>
+        <cols>[federated.185lyul1sulm5g18zk3jq107fjjr].[mn:user_registered:ok]</cols>
+      </table>
+      <simple-id uuid='{9EE8F646-8C7D-4E27-A570-AE0DE06C54E3}' />
+    </worksheet>
+    <worksheet name='Sheet 7'>
+      <table>
+        <view>
+          <datasources />
+          <aggregation value='true' />
+        </view>
+        <style />
+        <panes>
+          <pane selection-relaxation-option='selection-relaxation-allow'>
+            <view>
+              <breakdown value='auto' />
+            </view>
+            <mark class='Automatic' />
+            <style>
+              <style-rule element='mark'>
+                <format attr='mark-labels-cull' value='true' />
+                <format attr='mark-labels-show' value='false' />
+              </style-rule>
+            </style>
+          </pane>
+        </panes>
+        <rows />
+        <cols />
+      </table>
+      <simple-id uuid='{137DA93C-E16A-4EC8-A4EB-C4866BA14697}' />
+    </worksheet>
+    <worksheet name='Student Learing Goals'>
+      <layout-options>
+        <title>
+          <formatted-text>
+            <run>Student Learning Goals</run>
+          </formatted-text>
+        </title>
+      </layout-options>
+      <table>
+        <view>
+          <datasources>
+            <datasource caption='data_visualization' name='federated.185lyul1sulm5g18zk3jq107fjjr' />
+          </datasources>
+          <datasource-dependencies datasource='federated.185lyul1sulm5g18zk3jq107fjjr'>
+            <column caption='Count (User ID)' datatype='integer' name='[Calculation_5093148976815521792]' role='measure' type='quantitative'>
+              <calculation class='tableau' formula='COUNT([user_id])' />
+            </column>
+            <column-instance column='[onboarding_country]' derivation='None' name='[none:onboarding_country:nk]' pivot='key' type='nominal' />
+            <column-instance column='[onboarding_goals_label]' derivation='None' name='[none:onboarding_goals_label:nk]' pivot='key' type='nominal' />
+            <column-instance column='[onboarding_heard_from_label]' derivation='None' name='[none:onboarding_heard_from_label:nk]' pivot='key' type='nominal' />
+            <column-instance column='[onboarding_learn_label]' derivation='None' name='[none:onboarding_learn_label:nk]' pivot='key' type='nominal' />
+            <column-instance column='[subscription_type]' derivation='None' name='[none:subscription_type:nk]' pivot='key' type='nominal' />
+            <column caption='Onboarding Country' datatype='string' name='[onboarding_country]' role='dimension' semantic-role='[Country].[ISO3166_2]' type='nominal' />
+            <column caption='Onboarding Goals Label' datatype='string' name='[onboarding_goals_label]' role='dimension' type='nominal' />
+            <column caption='Onboarding Heard From Label' datatype='string' name='[onboarding_heard_from_label]' role='dimension' type='nominal' />
+            <column caption='Onboarding Learn Label' datatype='string' name='[onboarding_learn_label]' role='dimension' type='nominal' />
+            <column caption='Subscription Type' datatype='string' name='[subscription_type]' role='dimension' type='nominal' />
+            <column caption='User Id' datatype='integer' name='[user_id]' role='dimension' type='ordinal' />
+            <column-instance column='[Calculation_5093148976815521792]' derivation='User' name='[usr:Calculation_5093148976815521792:qk]' pivot='key' type='quantitative' />
+          </datasource-dependencies>
+          <filter class='categorical' column='[federated.185lyul1sulm5g18zk3jq107fjjr].[none:onboarding_goals_label:nk]' kind='hide'>
+            <groupfilter function='except' user:ui-domain='relevant' user:ui-enumeration='exclusive' user:ui-manual-selection='true' user:ui-manual-selection-all-when-empty='true' user:ui-marker='enumerate'>
+              <groupfilter function='level-members' level='[none:onboarding_goals_label:nk]' />
+              <groupfilter function='member' level='[none:onboarding_goals_label:nk]' member='%null%' />
+            </groupfilter>
+          </filter>
+          <shelf-sorts>
+            <shelf-sort-v2 dimension-to-sort='[federated.185lyul1sulm5g18zk3jq107fjjr].[none:onboarding_goals_label:nk]' direction='DESC' is-on-innermost-dimension='true' measure-to-sort-by='[federated.185lyul1sulm5g18zk3jq107fjjr].[usr:Calculation_5093148976815521792:qk]' shelf='rows' />
+          </shelf-sorts>
+          <slices>
+            <column>[federated.185lyul1sulm5g18zk3jq107fjjr].[none:onboarding_goals_label:nk]</column>
+            <column>[federated.185lyul1sulm5g18zk3jq107fjjr].[none:onboarding_heard_from_label:nk]</column>
+            <column>[federated.185lyul1sulm5g18zk3jq107fjjr].[none:onboarding_learn_label:nk]</column>
+            <column>[federated.185lyul1sulm5g18zk3jq107fjjr].[none:subscription_type:nk]</column>
+            <column>[federated.185lyul1sulm5g18zk3jq107fjjr].[none:onboarding_country:nk]</column>
+          </slices>
+          <aggregation value='true' />
+        </view>
+        <style />
+        <panes>
+          <pane selection-relaxation-option='selection-relaxation-allow'>
+            <view>
+              <breakdown value='auto' />
+            </view>
+            <mark class='Automatic' />
+            <style>
+              <style-rule element='mark'>
+                <format attr='mark-color' value='#748190' />
+              </style-rule>
+            </style>
+          </pane>
+        </panes>
+        <rows>[federated.185lyul1sulm5g18zk3jq107fjjr].[none:onboarding_goals_label:nk]</rows>
+        <cols>[federated.185lyul1sulm5g18zk3jq107fjjr].[usr:Calculation_5093148976815521792:qk]</cols>
+      </table>
+      <simple-id uuid='{109B496C-C8DD-4CCC-BF2E-24CA17F12BB3}' />
+    </worksheet>
+    <worksheet name='Student Learning Area'>
+      <layout-options>
+        <title>
+          <formatted-text>
+            <run>Student Learning Area</run>
+          </formatted-text>
+        </title>
+      </layout-options>
+      <table>
+        <view>
+          <datasources>
+            <datasource caption='data_visualization' name='federated.185lyul1sulm5g18zk3jq107fjjr' />
+          </datasources>
+          <datasource-dependencies datasource='federated.185lyul1sulm5g18zk3jq107fjjr'>
+            <column caption='Count (User ID)' datatype='integer' name='[Calculation_5093148976815521792]' role='measure' type='quantitative'>
+              <calculation class='tableau' formula='COUNT([user_id])' />
+            </column>
+            <column-instance column='[onboarding_country]' derivation='None' name='[none:onboarding_country:nk]' pivot='key' type='nominal' />
+            <column-instance column='[onboarding_goals_label]' derivation='None' name='[none:onboarding_goals_label:nk]' pivot='key' type='nominal' />
+            <column-instance column='[onboarding_heard_from_label]' derivation='None' name='[none:onboarding_heard_from_label:nk]' pivot='key' type='nominal' />
+            <column-instance column='[onboarding_learn_label]' derivation='None' name='[none:onboarding_learn_label:nk]' pivot='key' type='nominal' />
+            <column-instance column='[subscription_type]' derivation='None' name='[none:subscription_type:nk]' pivot='key' type='nominal' />
+            <column caption='Onboarding Country' datatype='string' name='[onboarding_country]' role='dimension' semantic-role='[Country].[ISO3166_2]' type='nominal' />
+            <column caption='Onboarding Goals Label' datatype='string' name='[onboarding_goals_label]' role='dimension' type='nominal' />
+            <column caption='Onboarding Heard From Label' datatype='string' name='[onboarding_heard_from_label]' role='dimension' type='nominal' />
+            <column caption='Onboarding Learn Label' datatype='string' name='[onboarding_learn_label]' role='dimension' type='nominal' />
+            <column caption='Subscription Type' datatype='string' name='[subscription_type]' role='dimension' type='nominal' />
+            <column caption='User Id' datatype='integer' name='[user_id]' role='dimension' type='ordinal' />
+            <column-instance column='[Calculation_5093148976815521792]' derivation='User' name='[usr:Calculation_5093148976815521792:qk]' pivot='key' type='quantitative' />
+          </datasource-dependencies>
+          <filter class='categorical' column='[federated.185lyul1sulm5g18zk3jq107fjjr].[none:onboarding_learn_label:nk]' kind='hide'>
+            <groupfilter function='except' user:ui-domain='relevant' user:ui-enumeration='exclusive' user:ui-manual-selection='true' user:ui-manual-selection-all-when-empty='true' user:ui-marker='enumerate'>
+              <groupfilter function='level-members' level='[none:onboarding_learn_label:nk]' />
+              <groupfilter function='member' level='[none:onboarding_learn_label:nk]' member='%null%' />
+            </groupfilter>
+          </filter>
+          <shelf-sorts>
+            <shelf-sort-v2 dimension-to-sort='[federated.185lyul1sulm5g18zk3jq107fjjr].[none:onboarding_learn_label:nk]' direction='DESC' is-on-innermost-dimension='true' measure-to-sort-by='[federated.185lyul1sulm5g18zk3jq107fjjr].[usr:Calculation_5093148976815521792:qk]' shelf='rows' />
+          </shelf-sorts>
+          <slices>
+            <column>[federated.185lyul1sulm5g18zk3jq107fjjr].[none:onboarding_goals_label:nk]</column>
+            <column>[federated.185lyul1sulm5g18zk3jq107fjjr].[none:onboarding_heard_from_label:nk]</column>
+            <column>[federated.185lyul1sulm5g18zk3jq107fjjr].[none:onboarding_learn_label:nk]</column>
+            <column>[federated.185lyul1sulm5g18zk3jq107fjjr].[none:subscription_type:nk]</column>
+            <column>[federated.185lyul1sulm5g18zk3jq107fjjr].[none:onboarding_country:nk]</column>
+          </slices>
+          <aggregation value='true' />
+        </view>
+        <style />
+        <panes>
+          <pane selection-relaxation-option='selection-relaxation-allow'>
+            <view>
+              <breakdown value='auto' />
+            </view>
+            <mark class='Automatic' />
+            <style>
+              <style-rule element='mark'>
+                <format attr='mark-color' value='#131f31' />
+              </style-rule>
+            </style>
+          </pane>
+        </panes>
+        <rows>[federated.185lyul1sulm5g18zk3jq107fjjr].[none:onboarding_learn_label:nk]</rows>
+        <cols>[federated.185lyul1sulm5g18zk3jq107fjjr].[usr:Calculation_5093148976815521792:qk]</cols>
+      </table>
+      <simple-id uuid='{7795DCE6-2A8C-4FB1-AB39-D8FADE7FD1C1}' />
+    </worksheet>
+  </worksheets>
+  <windows source-height='30'>
+    <window class='worksheet' name='Number of Students'>
+      <cards>
+        <edge name='left'>
+          <strip size='160'>
+            <card type='pages' />
+            <card type='filters' />
+            <card type='marks' />
+          </strip>
+        </edge>
+        <edge name='top'>
+          <strip size='2147483647'>
+            <card type='columns' />
+          </strip>
+          <strip size='2147483647'>
+            <card type='rows' />
+          </strip>
+          <strip size='31'>
+            <card type='title' />
+          </strip>
+        </edge>
+      </cards>
+      <viewpoint>
+        <zoom type='entire-view' />
+      </viewpoint>
+      <simple-id uuid='{5C08DCE9-7590-4E65-B36D-F0751874B25D}' />
+    </window>
+    <window class='worksheet' name='Sheet 2'>
+      <cards>
+        <edge name='left'>
+          <strip size='160'>
+            <card type='pages' />
+            <card type='filters' />
+            <card type='marks' />
+          </strip>
+        </edge>
+        <edge name='top'>
+          <strip size='2147483647'>
+            <card type='columns' />
+          </strip>
+          <strip size='2147483647'>
+            <card type='rows' />
+          </strip>
+          <strip size='31'>
+            <card type='title' />
+          </strip>
+        </edge>
+        <edge name='right'>
+          <strip size='160'>
+            <card pane-specification-id='3' param='[federated.185lyul1sulm5g18zk3jq107fjjr].[:Measure Names]' type='color' />
+          </strip>
+        </edge>
+      </cards>
+      <simple-id uuid='{007AABBB-31E1-45DF-862D-8F8058489156}' />
+    </window>
+    <window class='worksheet' name='Conversion Rate by Country'>
+      <cards>
+        <edge name='left'>
+          <strip size='160'>
+            <card type='pages' />
+            <card type='filters' />
+            <card type='marks' />
+          </strip>
+        </edge>
+        <edge name='top'>
+          <strip size='2147483647'>
+            <card type='columns' />
+          </strip>
+          <strip size='2147483647'>
+            <card type='rows' />
+          </strip>
+          <strip size='31'>
+            <card type='title' />
+          </strip>
+        </edge>
+      </cards>
+      <simple-id uuid='{D13D12C2-C911-4899-A09C-96396099B6A7}' />
+    </window>
+    <window class='worksheet' maximized='true' name='Heard from Us'>
+      <cards>
+        <edge name='left'>
+          <strip size='160'>
+            <card type='pages' />
+            <card type='filters' />
+            <card type='marks' />
+          </strip>
+        </edge>
+        <edge name='top'>
+          <strip size='2147483647'>
+            <card type='columns' />
+          </strip>
+          <strip size='2147483647'>
+            <card type='rows' />
+          </strip>
+          <strip size='31'>
+            <card type='title' />
+          </strip>
+        </edge>
+        <edge name='right'>
+          <strip size='160'>
+            <card mode='checkdropdown' param='[federated.185lyul1sulm5g18zk3jq107fjjr].[none:onboarding_country:nk]' type='filter' />
+          </strip>
+        </edge>
+      </cards>
+      <viewpoint>
+        <zoom type='entire-view' />
+      </viewpoint>
+      <simple-id uuid='{2EEDFCF0-903D-4CC8-B2C9-5BDCCB64E244}' />
+    </window>
+    <window class='worksheet' name='Student Learning Area'>
+      <cards>
+        <edge name='left'>
+          <strip size='160'>
+            <card type='pages' />
+            <card type='filters' />
+            <card type='marks' />
+          </strip>
+        </edge>
+        <edge name='top'>
+          <strip size='2147483647'>
+            <card type='columns' />
+          </strip>
+          <strip size='2147483647'>
+            <card type='rows' />
+          </strip>
+          <strip size='31'>
+            <card type='title' />
+          </strip>
+        </edge>
+      </cards>
+      <viewpoint>
+        <zoom type='entire-view' />
+      </viewpoint>
+      <simple-id uuid='{608FAD32-E0E1-4707-879D-6BD29D9DC40D}' />
+    </window>
+    <window class='worksheet' name='Student Learing Goals'>
+      <cards>
+        <edge name='left'>
+          <strip size='160'>
+            <card type='pages' />
+            <card type='filters' />
+            <card type='marks' />
+          </strip>
+        </edge>
+        <edge name='top'>
+          <strip size='2147483647'>
+            <card type='columns' />
+          </strip>
+          <strip size='2147483647'>
+            <card type='rows' />
+          </strip>
+          <strip size='31'>
+            <card type='title' />
+          </strip>
+        </edge>
+      </cards>
+      <simple-id uuid='{5E71D74F-1D1F-46FE-9AAE-A0BE39FA313B}' />
+    </window>
+    <window class='worksheet' name='Sheet 7'>
+      <cards>
+        <edge name='left'>
+          <strip size='160'>
+            <card type='pages' />
+            <card type='filters' />
+            <card type='marks' />
+          </strip>
+        </edge>
+        <edge name='top'>
+          <strip size='2147483647'>
+            <card type='columns' />
+          </strip>
+          <strip size='2147483647'>
+            <card type='rows' />
+          </strip>
+          <strip size='31'>
+            <card type='title' />
+          </strip>
+        </edge>
+      </cards>
+      <simple-id uuid='{2459A120-EECC-407E-A0DD-550EE1EEA030}' />
+    </window>
+  </windows>
+</workbook>
